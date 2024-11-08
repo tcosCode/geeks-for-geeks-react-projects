@@ -12,7 +12,11 @@ import SimpleFormPage from "@pages/SimpleFormPage";
 import JokeGeneratorPage from "@pages/JokeGeneratorPage";
 
 const router = createBrowserRouter([
-  { path: "/", element: <App />, errorElement: <ErrorPage /> },
+  {
+    path: "/geeks-for-geeks-react-projects/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+  },
   {
     path: "/SimpleFormPage",
     element: <SimpleFormPage />,

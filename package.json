@@ -1,5 +1,4 @@
 {
-  "homepage": "https://tcosCode.github.io/geeks-for-geeks-react-projects",
   "name": "geeksforgeeks-90-react-projects",
   "private": true,
   "version": "0.0.0",
@@ -8,9 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"    
   },
   "dependencies": {
     "gh-pages": "^6.2.0",

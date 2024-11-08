@@ -13,7 +13,7 @@ import JokeGeneratorPage from "@pages/JokeGeneratorPage";
 
 const router = createBrowserRouter([
   {
-    path: "/geeks-for-geeks-react-projects/",
+    path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
   },

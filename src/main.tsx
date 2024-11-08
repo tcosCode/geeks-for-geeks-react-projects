@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import "@styles/fonts.css";
 import "@styles/reset.css";
@@ -11,9 +11,9 @@ import ErrorPage from "@pages/ErrorPage";
 import SimpleFormPage from "@pages/SimpleFormPage";
 import JokeGeneratorPage from "@pages/JokeGeneratorPage";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: "/geeks-for-geeks-react-projects/",
+    path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
   },
@@ -25,6 +25,7 @@ const router = createBrowserRouter([
   {
     path: "/JokeGeneratorPage",
     element: <JokeGeneratorPage />,
+    errorElement: <ErrorPage />,
   },
 ]);
 

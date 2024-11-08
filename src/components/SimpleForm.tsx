@@ -1,5 +1,5 @@
 import { ChangeEvent, useState, FormEvent, useRef } from "react";
-import styles from "@styles/SimpleForm.module.css";
+import styles from "@styles/simpleForm.module.css";
 
 type Gender = "Male" | "Female" | "Other";
 

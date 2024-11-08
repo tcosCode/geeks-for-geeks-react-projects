@@ -1,5 +1,5 @@
 import { useJoke } from "@/hooks/useJoke";
-import styles from "@styles/JokeGenerator.module.css";
+import styles from "@styles/jokeGenerator.module.css";
 
 export default function JokeGenerator() {
   const { joke, loading, error, fetchJoke } = useJoke();

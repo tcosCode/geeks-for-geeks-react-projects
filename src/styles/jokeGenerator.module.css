@@ -1,0 +1,40 @@
+.container {
+  margin: 0 auto;
+  background-color: #006851;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f3f9dc;
+}
+
+.joke {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.container button {
+  background-color: #53af3e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.container button:hover {
+  background-color: #3e8e2e;
+}
+
+.container p {
+  margin: 1.25rem 0;
+}

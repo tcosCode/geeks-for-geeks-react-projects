@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/raleway-variable-regular/Raleway-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900; /* Define el rango de pesos disponibles */
+  font-stretch: 75% 125%; /* Define el rango de anchos disponibles */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/raleway-variable-italic/Raleway-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900; /* Define el rango de pesos disponibles */
+  font-stretch: 75% 125%; /* Define el rango de anchos disponibles */
+  font-style: italic;
+}

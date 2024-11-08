@@ -1,0 +1,97 @@
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.25rem 3rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form fieldset {
+  margin-bottom: 1.25rem;
+  padding: 1.25rem 0;
+  border: 0;
+}
+
+.gender,
+.subject {
+  display: flex;
+}
+
+.form legend {
+  font-weight: 600;
+  text-align: left;
+}
+
+.form h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #067118;
+  font-weight: 600;
+}
+
+.form sup {
+  color: red;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: auto;
+}
+
+.form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
+.form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  resize: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form button {
+  padding: 0.5rem 3rem;
+  background-color: #067118;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form h3 {
+  font-size: 1.5rem;
+}
+
+.form button:hover {
+  background-color: #0a8f29;
+}

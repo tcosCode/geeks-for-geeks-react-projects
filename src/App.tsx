@@ -8,10 +8,13 @@ function App() {
         <h1>Geeks for Geeks React Projects</h1>
         <ol>
           <li>
-            <Link to={"/SimpleFormPage"}>Simple Form</Link>
+            <Link to={"/SimpleForm"}>Simple Form</Link>
           </li>
           <li>
-            <Link to={"/JokeGeneratorPage"}>Joke Generator</Link>
+            <Link to={"/JokeGenerator"}>Joke Generator</Link>
+          </li>
+          <li>
+            <Link to={"/PasswordValidator"}>Password Validator</Link>
           </li>
         </ol>
       </div>

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import isIP from "validator/lib/isIP";
 
 import styles from "@styles/IpAddressFinder.module.css";
+import Mapa from "@/components/Mapa";
 
 export default function IpAddressFinderPage() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -13,8 +14,8 @@ export default function IpAddressFinderPage() {
     lat: 0,
     lon: 0,
   });
-  const [bbox, setBbox] = useState<string>("");
 
+  // Get the user's IP
   useEffect(() => {
     fetch("http://ip-api.com/json/")
       .then((response) => {
@@ -28,20 +29,22 @@ export default function IpAddressFinderPage() {
         setLocation(`${data.city}, ${data.region}, ${data.countryCode}`);
         setIsp(`${data.org}, ${data.isp}`);
         setCoord({ lat: data.lat, lon: data.lon });
-        updateMap(data.lat, data.lon);
         setIsLoading(false);
       })
       .catch((error) => console.error(error));
   }, []);
 
+  // Custom IP
   const findCustomIp = () => {
     if (!isIP(ip)) {
       alert("The IP is not valid");
+      return;
     }
+    setIsLoading(true);
     fetch(`http://ip-api.com/json/${ip}`)
       .then((response) => {
         if (!response.ok) {
-          throw new Error("Error: + response.statusText");
+          throw new Error("Error:" + response.statusText);
         }
         return response.json();
       })
@@ -49,13 +52,9 @@ export default function IpAddressFinderPage() {
         setLocation(`${data.city}, ${data.region}, ${data.countryCode}`);
         setIsp(`${data.org}, ${data.isp}`);
         setCoord({ lat: data.lat, lon: data.lon });
-        updateMap(data.lat, data.lon);
+        setIsLoading(false);
       })
       .catch((error) => console.error(error));
-  };
-
-  const updateMap = (lat: number, lon: number) => {
-    setBbox(`${lon - 0.01},${lat - 0.01},${lon + 0.01},${lat + 0.01}`);
   };
 
   return (
@@ -92,11 +91,7 @@ export default function IpAddressFinderPage() {
           </div>
         </section>
         <section className={styles.map}>
-          {!isLoading && (
-            <iframe
-              src={`https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&amp;layer=mapnik&amp;marker=${coord.lat},${coord.lon}`}
-            ></iframe>
-          )}
+          {!isLoading && <Mapa lat={coord.lat} lon={coord.lon} />}
         </section>
       </div>
     </div>

@@ -16,6 +16,9 @@ function App() {
           <li>
             <Link to={"/PasswordValidator"}>Password Validator</Link>
           </li>
+          <li>
+            <Link to={"/IpAddressFinder"}>Ip Address Finder</Link>
+          </li>
         </ol>
       </div>
     </>

@@ -5,6 +5,7 @@ import ErrorPage from "@pages/ErrorPage";
 import SimpleFormPage from "@pages/SimpleFormPage";
 import JokeGeneratorPage from "@pages/JokeGeneratorPage";
 import PasswordValidatorPage from "@pages/PasswordValidatorPage";
+import IpAddressFinderPage from "@pages/IpAddressFinderPage";
 
 const router = createHashRouter([
   {
@@ -26,6 +27,12 @@ const router = createHashRouter([
   {
     path: "/PasswordValidator",
     element: <PasswordValidatorPage />,
+    errorElement: <ErrorPage />,
+  },
+
+  {
+    path: "/IpAddressFinder",
+    element: <IpAddressFinderPage />,
     errorElement: <ErrorPage />,
   },
 ]);

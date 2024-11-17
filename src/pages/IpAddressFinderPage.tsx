@@ -17,7 +17,7 @@ export default function IpAddressFinderPage() {
 
   // Get the user's IP
   useEffect(() => {
-    fetch("https://ip-finder-backend-beta.vercel.app/")
+    fetch("https://ip-finder-backend-beta.vercel.app/ip")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Error:" + response.statusText);
@@ -41,7 +41,7 @@ export default function IpAddressFinderPage() {
       return;
     }
     setIsLoading(true);
-    fetch(`https://ip-finder-backend-beta.vercel.app/${ip}`)
+    fetch(`https://ip-finder-backend-beta.vercel.app/ip?ip=${ip}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Error:" + response.statusText);

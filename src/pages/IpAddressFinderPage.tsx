@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import isIP from "validator/lib/isIP";
 
-import styles from "@styles/IpAddressFinder.module.css";
+import styles from "@styles/ipAddressFinder.module.css";
 import Mapa from "@/components/Mapa";
 
 export default function IpAddressFinderPage() {

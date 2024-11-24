@@ -6,6 +6,7 @@ import SimpleFormPage from "@pages/SimpleFormPage";
 import JokeGeneratorPage from "@pages/JokeGeneratorPage";
 import PasswordValidatorPage from "@pages/PasswordValidatorPage";
 import IpAddressFinderPage from "@pages/IpAddressFinderPage";
+import DiceRollingPage from "@pages/DiceRollingPage";
 
 const router = createHashRouter([
   {
@@ -33,6 +34,12 @@ const router = createHashRouter([
   {
     path: "/IpAddressFinder",
     element: <IpAddressFinderPage />,
+    errorElement: <ErrorPage />,
+  },
+
+  {
+    path: "/DiceRolling",
+    element: <DiceRollingPage />,
     errorElement: <ErrorPage />,
   },
 ]);

@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.container h1 {
+  margin: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  color: darkslateblue;
+}
+
+.allDice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dice {
+  min-height: 100px;
+  background-color: white;
+  color: darkslateblue;
+  margin: 20px;
+}
+
+.container button {
+  max-width: max-content;
+  padding: 5px 30px;
+  font-size: 20px;
+  margin: 20px;
+  background-color: #bbb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.container button:hover {
+  background-color: #999;
+  cursor: pointer;
+}
+
+/* Applying Animation */
+.dieShaking {
+  animation-name: wobble;
+  animation-duration: 1s;
+}
+
+/* Setting Animation effect to the 
+     dice using css keyframe */
+@keyframes wobble {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}

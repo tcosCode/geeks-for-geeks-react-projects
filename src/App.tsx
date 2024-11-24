@@ -19,6 +19,9 @@ function App() {
           <li>
             <Link to={"/IpAddressFinder"}>Ip Address Finder</Link>
           </li>
+          <li>
+            <Link to={"/DiceRolling"}>Dice Rolling App</Link>
+          </li>
         </ol>
       </div>
     </>

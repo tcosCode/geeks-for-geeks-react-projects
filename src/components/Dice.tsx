@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { useDice } from "@/contexts/DiceContext";
-import styles from "@/styles/diceRolling.module.css";
+import styles from "@styles/diceRolling.module.css";
 
 export default function Dice({ index }: { index: number }) {
   const { diceValues, rolling } = useDice();

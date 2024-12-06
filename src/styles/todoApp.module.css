@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.containerTodos {
+  width: 70%;
+  border-top: 2px solid #ccc;
+  padding: 1rem;
+}
+
+.container h1 {
+  color: #006851;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.containerTodos input {
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.containerTodos button {
+  display: block;
+  background-color: #006851;
+  color: white;
+  border: none;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-block: 0.3rem 1rem;
+}
+
+.containerTodos button:hover {
+  background-color: #005c4f;
+}
+
+.container ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.container li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.container li .buttons :nth-child(1) {
+  font-size: 0.75rem;
+  background-color: transparent;
+  color: #646363;
+  padding: 0.3rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.container li .buttons :nth-child(2) {
+  font-size: 0.75rem;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}

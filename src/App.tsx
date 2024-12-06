@@ -25,6 +25,9 @@ function App() {
           <li>
             <Link to={"/RockPaperScissor"}>Rock Paper Scissor Game</Link>
           </li>
+          <li>
+            <Link to={"/TodoApp"}>Todo App</Link>
+          </li>
         </ol>
       </div>
     </>

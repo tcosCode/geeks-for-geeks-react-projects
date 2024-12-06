@@ -8,6 +8,7 @@ import PasswordValidatorPage from "@pages/PasswordValidatorPage";
 import IpAddressFinderPage from "@pages/IpAddressFinderPage";
 import DiceRollingPage from "@pages/DiceRollingPage";
 import RockPaperScissorPage from "@/pages/RockPaperScissorPage";
+import TodoApp from "@pages/TodoAppPage";
 
 const router = createHashRouter([
   {
@@ -46,6 +47,11 @@ const router = createHashRouter([
   {
     path: "/RockPaperScissor",
     element: <RockPaperScissorPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/TodoApp",
+    element: <TodoApp />,
     errorElement: <ErrorPage />,
   },
 ]);

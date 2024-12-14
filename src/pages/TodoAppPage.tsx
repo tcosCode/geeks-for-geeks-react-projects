@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 import styles from "@styles/todoApp.module.css";
 
 export default function TodoAppPage() {
@@ -24,8 +25,8 @@ export default function TodoAppPage() {
     }
   }
 
-  function deleteTodo(todo: string) {
-    setTodos((prevTodos) => prevTodos.filter((t) => t !== todo));
+  function deleteTodo(index: number) {
+    setTodos((prevTodos) => prevTodos.filter((_, i) => i !== index));
   }
 
   return (
@@ -43,11 +44,11 @@ export default function TodoAppPage() {
       <ul>
         {todos.map((todo, index) => {
           return (
-            <li key={index}>
+            <li key={uuidv4()}>
               {todo}
               <div className={styles.buttons}>
                 <button onClick={() => editTodo(todo, index)}>Edit</button>
-                <button onClick={() => deleteTodo(todo)}>Delete</button>
+                <button onClick={() => deleteTodo(index)}>Delete</button>
               </div>
             </li>
           );

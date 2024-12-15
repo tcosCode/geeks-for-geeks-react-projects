@@ -1,4 +1,4 @@
-import { useContext, createContext, useState } from "react";
+import { useContext, createContext, useState, ReactNode } from "react";
 
 const DiceContext = createContext({
   diceValues: [1, 1],
@@ -7,8 +7,6 @@ const DiceContext = createContext({
 });
 
 export const useDice = () => useContext(DiceContext);
-
-import { ReactNode } from "react";
 
 export const DiceProvider = ({ children }: { children: ReactNode }) => {
   const [diceValues, setDiceValues] = useState([1, 1]);

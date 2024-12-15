@@ -8,7 +8,8 @@ import PasswordValidatorPage from "@pages/PasswordValidatorPage";
 import IpAddressFinderPage from "@pages/IpAddressFinderPage";
 import DiceRollingPage from "@pages/DiceRollingPage";
 import RockPaperScissorPage from "@/pages/RockPaperScissorPage";
-import TodoApp from "@pages/TodoAppPage";
+import TodoAppPage from "@pages/TodoAppPage";
+import QuizAppPage from "@pages/QuizAppPage";
 
 const router = createHashRouter([
   {
@@ -51,7 +52,12 @@ const router = createHashRouter([
   },
   {
     path: "/TodoApp",
-    element: <TodoApp />,
+    element: <TodoAppPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/QuizApp",
+    element: <QuizAppPage />,
     errorElement: <ErrorPage />,
   },
 ]);

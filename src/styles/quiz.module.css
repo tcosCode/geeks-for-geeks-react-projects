@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container h1 {
+  color: #006851;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container h2 {
+  color: #006851;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.container h3 {
+  color: #006851;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.container form label {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  margin-left: 3rem;
+}
+
+.container form input[type="submit"] {
+  background-color: #006851;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: fit-content;
+  align-self: center;
+}
+
+.container form input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.container p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.container p span {
+  font-weight: 700;
+  color: #006851;
+}
+
+.container button {
+  background-color: #006851;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-block: 1rem;
+}
+
+.container button:hover {
+  background-color: #005c4d;
+}
+
+/* Animations */
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s forwards;
+}
+
+.quizQuestion {
+  position: relative;
+}

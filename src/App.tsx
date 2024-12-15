@@ -28,6 +28,9 @@ function App() {
           <li>
             <Link to={"/TodoApp"}>Todo App</Link>
           </li>
+          <li>
+            <Link to={"/QuizApp"}>Quiz App</Link>
+          </li>
         </ol>
       </div>
     </>

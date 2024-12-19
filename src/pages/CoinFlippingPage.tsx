@@ -57,8 +57,8 @@ export default function CoinFlippingApp() {
       <img
         src={
           face === "head"
-            ? "../public/flip-coin/head-coin.avif"
-            : "../public/flip-coin/back-coin.jpg"
+            ? "../flip-coin/head-coin.avif"
+            : "../flip-coin/back-coin.jpg"
         }
         alt={face === "head" ? "head-coin" : "tail-coin"}
         className={isFlipping ? styles.flipping : ""}

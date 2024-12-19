@@ -31,6 +31,9 @@ function App() {
           <li>
             <Link to={"/QuizApp"}>Quiz App</Link>
           </li>
+          <li>
+            <Link to={"/CoinFlipApp"}>Coin Flipping App</Link>
+          </li>
         </ol>
       </div>
     </>

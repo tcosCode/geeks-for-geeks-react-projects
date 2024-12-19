@@ -10,6 +10,7 @@ import DiceRollingPage from "@pages/DiceRollingPage";
 import RockPaperScissorPage from "@/pages/RockPaperScissorPage";
 import TodoAppPage from "@pages/TodoAppPage";
 import QuizAppPage from "@pages/QuizAppPage";
+import CoinFlippingApp from "@pages/CoinFlippingPage";
 
 const router = createHashRouter([
   {
@@ -58,6 +59,11 @@ const router = createHashRouter([
   {
     path: "/QuizApp",
     element: <QuizAppPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/CoinFlipApp",
+    element: <CoinFlippingApp />,
     errorElement: <ErrorPage />,
   },
 ]);
